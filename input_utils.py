@@ -1,15 +1,11 @@
-#encoding:utf-8
-#############################################
-# FileName: input_utils
-# Author: ChenDajun
-# CreateTime: 2020-06-12
-# Descreption: input utils
-#############################################
+# encoding:utf-8
+
 import os, json, codecs
 import tensorflow as tf
 import config
 
 FLAGS = config.FLAGS
+
 
 def parse_exp(example):
     features_def = dict()
@@ -38,6 +34,7 @@ def train_input_fn(filenames=None,
     dataset = dataset.map(parse_exp, num_parallel_calls=4)
     dataset = dataset.batch(batch_size, drop_remainder=True).repeat().prefetch(1)
     return dataset
+
 
 def eval_input_fn(filenames=None,
                   batch_size=128):

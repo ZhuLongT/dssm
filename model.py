@@ -1,10 +1,4 @@
 # coding:utf-8
-#############################################
-# FileName: model.py
-# Author: ChenDajun
-# CreateTime: 2020-06-12
-# Descreption: model
-#############################################
 
 import random
 import tensorflow as tf

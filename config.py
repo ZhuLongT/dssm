@@ -1,12 +1,5 @@
 # coding:utf-8
-#############################################
-# FileName: config.py
-# Author: ChenDajun
-# CreateTime: 2020-06-12
-# Descreption: configuration parameters
-#############################################
 
-import json, os, re, codecs
 import tensorflow as tf
 
 flags = tf.app.flags

@@ -1,14 +1,9 @@
 # coding:utf-8
-#############################################
-# FileName: predict.py
-# Author: ChenDajun
-# CreateTime: 2020-06-12
-# Descreption: get sentence vector
-#############################################
-import numpy as np
-import codecs
-import json
+
 import os
+import json
+import codecs
+import numpy as np
 from scipy.spatial import distance
 from tensorflow.contrib import predictor
 from tqdm import tqdm

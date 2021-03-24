@@ -1,13 +1,7 @@
 # coding:utf-8
-#############################################
-# FileName: convert_data.py
-# Author: ChenDajun
-# CreateTime: 2020-06-12
-# Descreption: convert tfrecord
-#############################################
+
 import json
 import codecs
-import numpy as np
 import tensorflow as tf
 from tqdm import tqdm
 
